@@ -20,7 +20,7 @@
     </style>
   </head>
 <body>
-
+<a href="/awesome">I'm awesome</a>
 <!-- Sidebar with image -->
 <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
   <div class="bgimg"></div>
