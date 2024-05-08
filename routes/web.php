@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('portfolio');
 });
 
+Route::get('/awesome', function () {
+    return view('slc');
+});
+
 Route::resource('posts', PostController::class);
 Route::resource('users', UserController::class);
 
