@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,8 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/', function () {
-    return view('portfolio');
+    $users = User::all();
+    return view('portfolio'), compact('users');
 });
 
 Route::get('/awesome', function () {
