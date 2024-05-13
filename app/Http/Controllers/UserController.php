@@ -12,9 +12,8 @@ class UserController extends Controller
 {
     public function index()
     {      
-        $users = User::all();
     
-        return view('portfolio',compact('users'));
+        return view('portfolio');
     }
 
     public function create()
