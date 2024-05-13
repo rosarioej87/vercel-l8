@@ -79,7 +79,13 @@
     </div>
   <!-- End Portfolio Section -->
   </div>
-
+  <div>
+      @foreach($users as $user)
+          <ul>
+              <li>{{ $user->name }}</li>
+          </ul>
+      @endforeach
+  </div>
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2>About</h2>
