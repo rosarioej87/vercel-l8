@@ -12,10 +12,8 @@ class UserController extends Controller
 {
     public function index()
     {      
-    $collection = collect([1, 2, 3, 4, 5, 6, 7]);
-    $chunks = $collection->chunk(4);
-    $chunks->all();
-        return view('portfolio', compact('chunks'));
+    $data = ["title" => "hello", "description" => "test test test"];
+        return view('portfolio', compact('data'));
     }
 
     public function create()
